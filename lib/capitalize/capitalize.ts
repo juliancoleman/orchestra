@@ -5,7 +5,7 @@
  * transformed to Uppercase._
  */
 
-const capitalize: (str: string) => string = str =>
-  str[0].toUpperCase() + str.slice(1);
-
-export default capitalize;
+export const capitalize: (str: string) => string = str =>
+  str[0] === str[0].toUpperCase()
+    ? str
+    : str[0].toUpperCase() + str.slice(1);
