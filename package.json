@@ -1,0 +1,19 @@
+{
+  "name": "orchestra",
+  "version": "0.0.1",
+  "description": "A pure function String library",
+  "main": "index.js",
+  "repository": "git@github.com:juliancoleman/orchestra",
+  "author": "Julian Coleman <jcoleman.engineering@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "generate-barrels": "barrelsby -c barrelsby.json"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "barrelsby": "^0.0.8",
+    "chai": "^4.1.2",
+    "tslint-config-airbnb": "^5.8.0",
+    "typescript": "^2.8.3"
+  }
+}

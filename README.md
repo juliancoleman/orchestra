@@ -1,2 +1,3 @@
 # orchestra
-A pure function String library
+
+A dependency-free, pure-function String library
