@@ -5,7 +5,7 @@
  * (`\n`) character._
  */
 
-import clean from "./clean";
+import { clean } from "../clean/clean";
 
 const splitLines: Function = (str: string) =>
   str.split("\n").map(clean);

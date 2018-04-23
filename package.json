@@ -6,10 +6,16 @@
   "repository": "git@github.com:juliancoleman/orchestra",
   "author": "Julian Coleman <jcoleman.engineering@gmail.com>",
   "license": "MIT",
+  "pre-commit": [
+    "lint",
+    "verify",
+    "test:base"
+  ],
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.build.js",
     "coverage": "yarn run test:base --coverage",
     "coverage:serve": "yarn run coverage && yarn run serve-lcov",
+    "lint": "tslint -p tsconfig.json \"{,!(node_modules)/}**/src/**/*.ts\"",
     "generate-barrels": "barrelsby -c barrelsby.json",
     "serve-lcov": "serve -s coverage/lcov-report",
     "test": "yarn run test:base --watch",
@@ -24,9 +30,11 @@
     "codecov": "^3.0.0",
     "jest": "^22.4.3",
     "jest-spec-reporter": "^1.0.3",
+    "pre-commit": "^1.2.2",
     "serve": "^6.5.5",
     "ts-jest": "^22.4.4",
     "ts-node": "^6.0.0",
+    "tslint": "^5.9.1",
     "tslint-config-airbnb": "^5.8.0",
     "typescript": "^2.8.3"
   }

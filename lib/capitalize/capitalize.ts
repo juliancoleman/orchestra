@@ -5,7 +5,12 @@
  * transformed to Uppercase._
  */
 
-export const capitalize: (str: string) => string = str =>
-  str[0] === str[0].toUpperCase()
+export function capitalize(str: string): string {
+  if (typeof str !== "string") {
+    throw new TypeError(`Orchestra: #capitalize expected a String, got ${typeof str}`)
+  }
+
+  return str[0] === str[0].toUpperCase()
     ? str
     : str[0].toUpperCase() + str.slice(1);
+};

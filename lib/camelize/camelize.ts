@@ -6,8 +6,6 @@
  * `lowercase`, `uppercase`, and `Title Case`.
  */
 
-const camelize: (str: string) => string = (str) => {
+export const camelize: (str: string) => string = (str) => {
   return str;
 };
-
-export default camelize;

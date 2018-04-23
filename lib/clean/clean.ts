@@ -6,9 +6,7 @@
  * single space._
  */
 
-import whitespaces from "../helpers/regex/whitespaces";
+import whitespaces from "../../helpers/regex/whitespaces";
 
-const clean: Function = (str: string) =>
+export const clean: (str: string) => string = str =>
   str.replace(whitespaces, " ").trim();
-
-export default clean;
