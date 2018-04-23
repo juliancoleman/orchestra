@@ -2,6 +2,9 @@
 
 A dependency-free, pure-function `String` library
 
+[![Build Status](https://semaphoreci.com/api/v1/juliancoleman/orchestra/branches/master/badge.svg)](https://semaphoreci.com/juliancoleman/orchestra)
+[![codecov](https://codecov.io/gh/juliancoleman/orchestra/branch/master/graph/badge.svg)](https://codecov.io/gh/juliancoleman/orchestra)
+
 # Usage
 
 ## Installation
