@@ -147,6 +147,16 @@ not watch for file changes.**
 A special command is used for Continuous Integration that
 you won't need to worry about. Just know that it is there.
 
+If you decide you'd like to run a service like [Travis](https://travis-ci.org/)
+with the help of [Replicated](https://github.com/replicatedhq/replicated)
+for on-premises continuous integration, [follow this demo](https://github.com/replicatedhq/replicated-ci-demo)
+to get started. The demo includes configs for both `Travis`
+and `Circle CI`.
+
+For `Orchestra`, I feel this practice would be general
+overkill. But this library is architected to help support
+that for developer practice.
+
 ### Writing your own tests
 
 Jest has a very familiar feel to the likes of mocha and
