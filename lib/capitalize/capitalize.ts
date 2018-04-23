@@ -1,3 +1,5 @@
+import { validate } from "../validate";
+
 /**
  * Capitalize
  *
@@ -5,12 +7,14 @@
  * transformed to Uppercase._
  */
 
-export function capitalize(str: string): string {
-  if (typeof str !== "string") {
-    throw new TypeError(`Orchestra: #capitalize expected a String, got ${typeof str}`)
-  }
 
+
+function capitalizeFn(str: string): string {
   return str[0] === str[0].toUpperCase()
     ? str
     : str[0].toUpperCase() + str.slice(1);
-};
+}
+
+export function capitalize(str: string): string {
+  return validate(str, capitalizeFn);
+}

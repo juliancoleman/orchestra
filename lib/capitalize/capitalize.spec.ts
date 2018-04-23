@@ -1,4 +1,5 @@
 import { capitalize } from "./capitalize";
+import { OrchestraTypeError, OrchestraReferenceError } from "../../helpers/errors";
 
 describe("#capitalize", () => {
   describe("bad inputs", () => {
@@ -7,16 +8,19 @@ describe("#capitalize", () => {
       const capitalizeBadFn1 = () => capitalize(0);
       // @ts-ignore
       const capitalizeBadFn2 = () => capitalize();
-      class Other extends String { }
-      const myOther = new Other("test");
 
-      // @ts-ignore
-      const capitalizeBadFn3 = () => capitalize(myOther);
-
-      expect(capitalizeBadFn1).toThrow(TypeError);
-      expect(capitalizeBadFn2).toThrow(TypeError);
-      expect(capitalizeBadFn3).toThrow(TypeError);
+      expect(capitalizeBadFn1).toThrow(OrchestraTypeError);
+      expect(capitalizeBadFn2).toThrow(OrchestraReferenceError);
     });
+  });
+
+  it("handles extended types properly", () => {
+    class Other extends String { }
+    const myOther = new Other("test");
+    // @ts-ignore
+    const result = capitalize(myOther);
+
+    expect(result).toBe("Test");
   });
 
   it("returns a string", () => {
@@ -31,21 +35,21 @@ describe("#capitalize", () => {
 
     expect(result1).toBe("Julian");
     expect(result2).toBe("Julian");
-  })
+  });
 
   describe("the first character is not a letter", () => {
     it("returns the provided string, making no modifications", () => {
       const beginsWithPunctuation = capitalize(".string");
       const beginsWithNumber = capitalize("1string");
 
-      expect(beginsWithPunctuation[0]).toBe(".");
+      expect(beginsWithPunctuation.startsWith(".")).toBe(true);
       expect(beginsWithPunctuation).toBe(".string");
-      expect(beginsWithNumber[0]).toBe("1");
+      expect(beginsWithNumber.startsWith("1")).toBe(true);
       expect(beginsWithNumber).toBe("1string");
     });
   });
 
-  it("is language-safe", () => {
+  it("is language-safe (mostly)", () => {
     const russian = capitalize("б");
     const greek = capitalize("δ");
     // const turkish = capitalize("i");
