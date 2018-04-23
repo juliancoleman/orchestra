@@ -104,8 +104,8 @@ This command will spin up Jest, run all tests, and watch
 for additional changes to files. The watcher will restart
 if it detects a change in any `.js` or `.ts` file.
 
-On the first run of Jest, it may report `0 suites found`.
-Just hit `a` and let it find the suite.
+> On the first run of Jest, it may report `0 suites found`.
+> Just hit `a` and let it find the suite.
 
 ### Coverage reporting
 
