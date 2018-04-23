@@ -15,7 +15,7 @@
     "build": "tsc -p tsconfig.build.js",
     "coverage": "yarn run test:base --coverage",
     "coverage:serve": "yarn run coverage && yarn run serve-lcov",
-    "lint": "tslint -p tsconfig.json \"{,!(node_modules)/}**/src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
     "generate-barrels": "barrelsby -c barrelsby.json",
     "serve-lcov": "serve -s coverage/lcov-report",
     "test": "yarn run test:base --watch",
@@ -26,6 +26,7 @@
   "dependencies": {},
   "devDependencies": {
     "@types/jest": "^22.2.3",
+    "@types/node": "^9.6.6",
     "barrelsby": "^0.0.8",
     "codecov": "^3.0.0",
     "jest": "^22.4.3",
