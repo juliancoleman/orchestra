@@ -8,7 +8,6 @@ import { validate } from "../validate";
  */
 
 
-
 function capitalizeFn(str: string): string {
   return str[0] === str[0].toUpperCase()
     ? str
