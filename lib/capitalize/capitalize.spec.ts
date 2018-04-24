@@ -2,16 +2,14 @@ import { capitalize } from "./capitalize";
 import { OrchestraTypeError, OrchestraReferenceError } from "../../helpers/errors";
 
 describe("#capitalize", () => {
-  describe("bad inputs", () => {
-    it("fail", () => {
-      // @ts-ignore
-      const capitalizeBadFn1 = () => capitalize(0);
-      // @ts-ignore
-      const capitalizeBadFn2 = () => capitalize();
+  it("properly implements Orchestra#validate", () => {
+    // @ts-ignore
+    const capitalizeBadFn1 = () => capitalize(0);
+    // @ts-ignore
+    const capitalizeBadFn2 = () => capitalize();
 
-      expect(capitalizeBadFn1).toThrow(OrchestraTypeError);
-      expect(capitalizeBadFn2).toThrow(OrchestraReferenceError);
-    });
+    expect(capitalizeBadFn1).toThrow(OrchestraTypeError);
+    expect(capitalizeBadFn2).toThrow(OrchestraReferenceError);
   });
 
   it("handles extended types properly", () => {
