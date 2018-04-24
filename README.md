@@ -1,6 +1,6 @@
 # Orchestra
 
-A dependency-free, pure-function `String` library
+A dependency-free, pure-function `String` manipulation library
 
 [![Build Status](https://semaphoreci.com/api/v1/juliancoleman/orchestra/branches/master/badge.svg)](https://semaphoreci.com/juliancoleman/orchestra)
 [![Maintainability](https://api.codeclimate.com/v1/badges/392fba3ab70c70e4ebb9/maintainability)](https://codeclimate.com/github/juliancoleman/orchestra/maintainability)
