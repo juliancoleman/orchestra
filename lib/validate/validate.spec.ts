@@ -16,6 +16,13 @@ describe("#validate", () => {
 
       expect(validateBadFn).toThrow(OrchestraReferenceError);
     });
+
+    it("a value is not provided", () => {
+      // @ts-ignore
+      const validateBadFn = () => validate();
+
+      expect(validateBadFn).toThrow(OrchestraReferenceError);
+    });
   });
 
   it("returns a callback with the provided value", () => {
