@@ -2,6 +2,8 @@ import { whitespaces } from "../../helpers/regex";
 
 /**
  * Clean
+ * @param {string} str
+ * @returns {string}
  *
  * _Returns a new string with trimmed left and right-hand
  * whitespace and repeating spaces and tabs replaced by a
