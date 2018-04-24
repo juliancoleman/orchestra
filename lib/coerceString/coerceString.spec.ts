@@ -34,4 +34,12 @@ describe("#coerceString", () => {
     // You can't even test this in strict mode.
     // Don't even bother. This always throws.
   });
+
+  it("returns null if input is nil", () => {
+    const result1 = coerceString(null);
+    const result2 = coerceString(undefined);
+
+    expect(result1).toBe(null);
+    expect(result2).toBe(null);
+  });
 });
