@@ -1,11 +1,12 @@
 /**
  * Decapitalize
  *
+ * @export
  * @param {string} str
  * @returns {string}
  *
- * _Returns a new string with the first index of a string
- * transformed to lowercase._
+ * @description _Returns a new string with the first index of a string transformed to lowercase._
+ * @since v0.0.1
  */
 
 

@@ -1,11 +1,12 @@
 /**
  * Capitalize
  *
- * @param {string} str
+ * @export
+ * @param {tring} str
  * @returns {string}
  *
- * _Returns a new string with the first index of a string
- * transformed to Uppercase._
+ * @description _Returns a new string with the first index of a string transformed to Uppercase._
+ * @since v0.0.1
  */
 
 // export function capitalizeByLocale(locale: string): (str: string) => string {

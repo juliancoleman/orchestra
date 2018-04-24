@@ -1,11 +1,12 @@
 /**
  * coerceString
  *
+ * @export
  * @param {any} value
+ * @returns {string}
  *
- * _Attempts to coerce a value to a string, ignoring `null`
- * or `undefined` inputs. Octal syntax will throw a
- * `SyntaxError: Invalid number`. Cannot coerce Map or Set._
+ * @description _Attempts to coerce a not-nil value to a string. Cannot coerce Octals, Map, or Set._
+ * @since v0.0.1
  */
 
 
