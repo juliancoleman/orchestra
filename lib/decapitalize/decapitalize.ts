@@ -1,11 +1,19 @@
 /**
  * Decapitalize
  *
+ * @param {string} str
+ * @returns {string}
+ *
  * _Returns a new string with the first index of a string
  * transformed to lowercase._
  */
 
-const decapitalize: Function = (str: string) =>
-  str[0].toLowerCase() + str.slice(1);
 
-export default decapitalize;
+export function decapitalize(str: string): string {
+  const head = str[0];
+  const lowercaseHead = head.toLowerCase();
+
+  return head === lowercaseHead
+    ? str
+    : lowercaseHead + str.slice(1);
+}
