@@ -26,14 +26,4 @@ describe("#capitalize", () => {
       expect(beginsWithNumber).toBe("1string");
     });
   });
-
-  it("is language-safe (mostly)", () => {
-    const russian = capitalize("б");
-    const greek = capitalize("δ");
-    // const turkish = capitalize("i");
-
-    expect(russian).toBe("Б");
-    expect(greek).toBe("Δ");
-    // expect(turkish).toBe("İ");
-  });
 });

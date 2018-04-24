@@ -7,6 +7,17 @@
  * transformed to Uppercase._
  */
 
+// export function capitalizeByLocale(locale: string): (str: string) => string {
+//   return function(str: string): string {
+//     const head = str[0];
+//     const capitalizedHead = head.toLocaleUpperCase(locale);
+
+//     return head === capitalizedHead
+//       ? str
+//       : capitalizedHead + str.slice(1);
+//   };
+// }
+
 
 export function capitalize(str: string): string {
   return str[0] === str[0].toUpperCase()
