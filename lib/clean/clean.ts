@@ -1,3 +1,6 @@
+import { whitespaces } from "../../helpers/regex";
+import { validate } from "../validate";
+
 /**
  * Clean
  *
@@ -6,7 +9,11 @@
  * single space._
  */
 
-import whitespaces from "../../helpers/regex/whitespaces";
 
-export const clean: (str: string) => string = str =>
-  str.replace(whitespaces, " ").trim();
+function cleanFn(str: string): string {
+  return str.replace(whitespaces, " ").trim();
+}
+
+export function clean(str: string): string {
+  return validate(str, cleanFn);
+}
