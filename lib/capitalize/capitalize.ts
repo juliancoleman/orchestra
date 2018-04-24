@@ -1,5 +1,6 @@
 /**
  * Capitalize
+ *
  * @param {string} str
  * @returns {string}
  *
@@ -20,7 +21,10 @@
 
 
 export function capitalize(str: string): string {
-  return str[0] === str[0].toUpperCase()
+  const head = str[0];
+  const capitalizedHead = head.toUpperCase();
+
+  return head === capitalizedHead
     ? str
-    : str[0].toUpperCase() + str.slice(1);
+    : capitalizedHead + str.slice(1);
 }

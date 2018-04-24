@@ -8,11 +8,11 @@ describe("#capitalize", () => {
   });
 
   it("returns a string with the first character capitalized", () => {
-    const result1 = capitalize("julian");
-    const result2 = capitalize("Julian");
+    const result1 = capitalize("test");
+    const result2 = capitalize("Test");
 
-    expect(result1).toBe("Julian");
-    expect(result2).toBe("Julian");
+    expect(result1).toBe("Test");
+    expect(result2).toBe("Test");
   });
 
   describe("the first character is not a letter", () => {
