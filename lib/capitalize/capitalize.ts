@@ -1,4 +1,3 @@
-
 /**
  * Capitalize
  * @param {string} str
