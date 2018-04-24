@@ -1,6 +1,8 @@
 
 /**
  * Capitalize
+ * @param {string} str
+ * @returns {string}
  *
  * _Returns a new string with the first index of a string
  * transformed to Uppercase._
