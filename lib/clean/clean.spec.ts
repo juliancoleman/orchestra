@@ -1,3 +1,3 @@
 describe("#clean", () => {
-  it("");
+  it("properly implements Orchestra");
 });

@@ -1,5 +1,4 @@
 import { whitespaces } from "../../helpers/regex";
-import { validate } from "../validate";
 
 /**
  * Clean
@@ -10,10 +9,6 @@ import { validate } from "../validate";
  */
 
 
-function cleanFn(str: string): string {
-  return str.replace(whitespaces, " ").trim();
-}
-
 export function clean(str: string): string {
-  return validate(str, cleanFn);
+  return str.replace(whitespaces, " ").trim();
 }

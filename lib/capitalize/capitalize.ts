@@ -1,4 +1,3 @@
-import { validate } from "../validate";
 
 /**
  * Capitalize
@@ -8,12 +7,8 @@ import { validate } from "../validate";
  */
 
 
-function capitalizeFn(str: string): string {
+export function capitalize(str: string): string {
   return str[0] === str[0].toUpperCase()
     ? str
     : str[0].toUpperCase() + str.slice(1);
-}
-
-export function capitalize(str: string): string {
-  return validate(str, capitalizeFn);
 }
