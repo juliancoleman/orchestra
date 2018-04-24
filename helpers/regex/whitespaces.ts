@@ -5,6 +5,4 @@
  * in a string._
  */
 
-const whitespaces: RegExp = /\s+/g;
-
-export default whitespaces;
+export const whitespaces: RegExp = /\s+/g;
