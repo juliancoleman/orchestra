@@ -1,3 +1,12 @@
-export const normalize: (str: string) => string = (str) => {
-  return str;
-};
+/**
+ * Normalize
+ *
+ * @export
+ * @param {string} str
+ * @returns {string}
+ *
+ * @description __
+ */
+
+
+export const normalize: string = "";
