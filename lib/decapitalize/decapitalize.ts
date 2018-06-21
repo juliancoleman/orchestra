@@ -1,3 +1,5 @@
+import { applyHead } from "../../helpers/applyHead";
+
 /**
  * Decapitalize
  *
@@ -10,10 +12,5 @@
  */
 
 export function decapitalize(str: string): string {
-  const head = str[0];
-  const lowercaseHead = head.toLowerCase();
-
-  return head === lowercaseHead
-    ? str
-    : lowercaseHead + str.slice(1);
+  return applyHead(str, String.prototype.toLowerCase);
 }

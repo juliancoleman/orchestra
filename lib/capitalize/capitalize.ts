@@ -1,8 +1,10 @@
+import { applyHead } from "../../helpers/applyHead";
+
 /**
  * Capitalize
  *
  * @export
- * @param {tring} str
+ * @param {string} str
  * @returns {string}
  *
  * @description _Returns a new string with the first index of a string transformed to Uppercase._
@@ -10,10 +12,5 @@
  */
 
 export function capitalize(str: string): string {
-  const head = str[0];
-  const capitalizedHead = head.toUpperCase();
-
-  return head === capitalizedHead
-    ? str
-    : capitalizedHead + str.slice(1);
+  return applyHead(str, String.prototype.toUpperCase);
 }
