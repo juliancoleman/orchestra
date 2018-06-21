@@ -1,14 +1,14 @@
 {
-  "name": "orchestra",
+  "name": "@juliancoleman/orchestra",
   "version": "0.0.1",
-  "description": "A pure function String library",
+  "description": "A dependency-free, Typescipt-first, pure-function String manipulation library",
   "main": "index.js",
   "repository": "git@github.com:juliancoleman/orchestra",
   "author": "Julian Coleman <jcoleman.engineering@gmail.com>",
   "license": "MIT",
   "pre-commit": [
-    "lint",
     "verify",
+    "lint",
     "test:base"
   ],
   "scripts": {
@@ -17,24 +17,24 @@
     "coverage:serve": "yarn run coverage && yarn run serve-lcov",
     "lint": "tslint -p tsconfig.json",
     "generate-barrels": "barrelsby -c barrelsby.json",
-    "serve-lcov": "serve -s coverage/lcov-report",
+    "serve:lcov": "serve -s coverage/lcov-report",
     "test": "yarn run test:base --watch",
     "test:base": "jest --config ./jest.config.js -i",
     "test:ci": "CI=true yarn run coverage && cat ./coverage/lcov.info | codecov",
     "verify": "tsc"
   },
   "devDependencies": {
-    "@types/jest": "^22.2.3",
-    "@types/node": "^9.6.6",
-    "barrelsby": "^0.0.8",
-    "codecov": "^3.0.0",
-    "jest": "^22.4.3",
+    "@types/jest": "^23.1.1",
+    "@types/node": "^10.3.4",
+    "barrelsby": "^1.0.2",
+    "codecov": "^3.0.2",
+    "jest": "^23.1.0",
     "jest-spec-reporter": "^1.0.3",
     "pre-commit": "^1.2.2",
-    "serve": "^6.5.5",
-    "ts-jest": "^22.4.4",
-    "tslint": "^5.9.1",
-    "tslint-config-airbnb": "^5.8.0",
-    "typescript": "^2.8.3"
+    "serve": "^9.1.0",
+    "ts-jest": "^22.4.6",
+    "tslint": "^5.10.0",
+    "tslint-config-airbnb": "^5.9.2",
+    "typescript": "^2.9.2"
   }
 }

@@ -1,6 +1,6 @@
 import { capitalize } from "./capitalize";
 
-describe("#capitalize", () => {
+describe("#capitalize()", () => {
   it("returns a string", () => {
     const result = capitalize("hello, world");
 

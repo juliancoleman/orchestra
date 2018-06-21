@@ -1,6 +1,6 @@
 # Orchestra
 
-A dependency-free, pure-function `String` manipulation library
+A dependency-free, Typescipt-first, pure-function `String` manipulation library
 
 [![Build Status](https://semaphoreci.com/api/v1/juliancoleman/orchestra/branches/master/badge.svg)](https://semaphoreci.com/juliancoleman/orchestra)
 [![Maintainability](https://api.codeclimate.com/v1/badges/392fba3ab70c70e4ebb9/maintainability)](https://codeclimate.com/github/juliancoleman/orchestra/maintainability)
@@ -79,6 +79,22 @@ There is no server framework for Orchestra, so you won't
 need to `yarn start` or any of that.
 
 ## Testing
+
+#### Note:
+
+If you run into the following error while running the test
+suite on MacOS:
+
+```bash
+$ jest --config ./jest.config.js -i --watch
+Error: `fsevents` unavailable (this watcher can only be used on Darwin)
+```
+
+then run the following:
+
+```bash
+brew install watchman
+```
 
 ### Test suite
 

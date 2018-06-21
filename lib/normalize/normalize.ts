@@ -8,5 +8,4 @@
  * @description __
  */
 
-
 export const normalize: string = "";

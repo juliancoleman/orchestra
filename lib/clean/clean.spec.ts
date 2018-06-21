@@ -2,8 +2,7 @@ import { clean } from "./clean";
 
 const expectedResult = "hello, world";
 
-
-describe("#clean", () => {
+describe("#clean()", () => {
   it("returns a string", () => {
     const result = clean("hello, world");
 
@@ -20,7 +19,6 @@ describe("#clean", () => {
     const carriageReturn = clean("hello,\rworld");
     const repeatedCarriageReturn = clean("hello,\r\rworld");
     const mixedWhitespace = clean("hello, \t\n\rworld");
-
 
     expect(space).toBe(expectedResult);
     expect(repeatedSpace).toBe(expectedResult);

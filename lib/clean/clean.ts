@@ -11,7 +11,6 @@ import { whitespaces } from "../../helpers/regex";
  * @since v0.0.1
  */
 
-
 export function clean(str: string): string {
   return str.replace(whitespaces, " ").trim();
 }

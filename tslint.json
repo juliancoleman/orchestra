@@ -1,8 +1,15 @@
 {
   "extends": "tslint-config-airbnb",
   "rules": {
-    "quotemark": [true, "double"],
-    "semicolon": [true, "always"]
+    "quotemark": [
+      true,
+      "double"
+    ],
+    "semicolon": [
+      true,
+      "always"
+    ],
+    "no-magic-numbers": true
   },
   "linterOptions": {
     "exclude": [

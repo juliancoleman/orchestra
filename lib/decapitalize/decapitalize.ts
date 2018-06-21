@@ -9,7 +9,6 @@
  * @since v0.0.1
  */
 
-
 export function decapitalize(str: string): string {
   const head = str[0];
   const lowercaseHead = head.toLowerCase();

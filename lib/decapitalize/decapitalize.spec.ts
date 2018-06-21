@@ -1,6 +1,6 @@
 import { decapitalize } from "./decapitalize";
 
-describe("#decapitalize", () => {
+describe("#decapitalize()", () => {
   it("returns a string", () => {
     const result = decapitalize("Hello, world");
 
