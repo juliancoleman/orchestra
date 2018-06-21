@@ -1,3 +1,5 @@
 describe("#camelize", () => {
-  it("");
+  it("test not written", () => {
+    return;
+  });
 });

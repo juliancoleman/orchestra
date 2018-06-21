@@ -1,3 +1,5 @@
 describe("#snakeize", () => {
-  it("");
+  it("test not written", () => {
+    return;
+  });
 });

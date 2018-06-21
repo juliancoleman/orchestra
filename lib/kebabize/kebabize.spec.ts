@@ -1,3 +1,5 @@
 describe("#kebabize", () => {
-  it("");
+  it("test not written", () => {
+    return;
+  });
 });

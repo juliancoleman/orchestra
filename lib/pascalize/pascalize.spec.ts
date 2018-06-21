@@ -1,3 +1,5 @@
 describe("#pascalize", () => {
-  it("");
+  it("test not written", () => {
+    return;
+  });
 });

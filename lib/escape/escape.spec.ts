@@ -1,3 +1,5 @@
 describe("#escape", () => {
-  it("");
+  it("test not written", () => {
+    return;
+  });
 });
