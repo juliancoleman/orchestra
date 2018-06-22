@@ -8,7 +8,7 @@ import { escape } from "../../helpers/regex";
  * escapeHTML
  *
  * @export
- * @param {string} str
+ * @param {string} node
  * @returns {string}
  *
  * @description _Converts HTML special characters to their entity equivalents. Cannot convert nodes returned by `querySelector`._
