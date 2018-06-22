@@ -15,7 +15,7 @@ import { escape } from "../../helpers/regex";
  * @since v0.0.1
  */
 
-export function escapeHTML(node: DOMStringMap): string | null {
+export function escapeHTML(node: string): string | null {
   const str = coerceString(node);
 
   if (!str) { return null; }
