@@ -7,4 +7,8 @@ describe("#escape()", () => {
       expect(escapeHTML(value)).toBe(escapeCharacters[value]);
     }
   });
+
+  it("returns null for bad inputs", () => {
+    expect(escapeHTML()).toBe(null);
+  });
 });
