@@ -14,7 +14,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.js",
     "coverage": "yarn run test:base --coverage",
-    "coverage:serve": "yarn run coverage && yarn run serve-lcov",
+    "coverage:serve": "yarn run coverage && yarn run serve:lcov",
     "lint": "tslint -p tsconfig.json",
     "generate-barrels": "barrelsby -c barrelsby.json",
     "serve:lcov": "serve -s coverage/lcov-report",

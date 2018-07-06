@@ -1,7 +1,6 @@
 // tslint:disable max-line-length
-
-import { coerceString } from "../";
 import { escapeCharacters } from "../../helpers/escapeCharacters";
+import { mapReplace } from "../../helpers/mapReplace";
 import { escape } from "../../helpers/regex";
 
 /**
@@ -15,10 +14,8 @@ import { escape } from "../../helpers/regex";
  * @since v0.0.1
  */
 
-export function escapeHTML(node?: string): string | null {
-  const str = coerceString(node);
+export function escapeHTML(node: string): string | null {
+  const replaceFn = (val: string) => escapeCharacters[val];
 
-  if (!str) { return null; }
-
-  return str.replace(escape, val => escapeCharacters[val]);
+  return mapReplace(node, escape, replaceFn);
 }
