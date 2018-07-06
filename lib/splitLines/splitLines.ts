@@ -1,13 +1,18 @@
+import { clean } from "../";
+
 /**
  * splitLines
  *
- * _Returns a new array of strings split at the newline
- * (`\n`) character._
+ * @export
+ * @param {string} node
+ * @returns {string}
+ *
+ * @description _Splits a string to an array at each newline character._
+ * @since v0.0.1
  */
 
-import { clean } from "../clean/clean";
-
-const splitLines: Function = (str: string) =>
-  str.split("\n").map(clean);
-
-export default splitLines;
+export function splitLines(str: string): string[] {
+  return str
+    .split("\n")
+    .map(clean);
+}
