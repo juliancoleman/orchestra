@@ -1,7 +1,7 @@
 import { unescapeHTML } from "./unescapeHTML";
 import { htmlEntities } from "../../helpers/htmlEntities";
 
-describe("#unescape()", () => {
+describe("#unescapeHTML()", () => {
   it("converts entities supplied by map", () => {
     for (const value in htmlEntities) {
       expect(unescapeHTML(value)).toBe(htmlEntities[value]);
