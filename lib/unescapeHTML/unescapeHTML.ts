@@ -16,17 +16,17 @@ import { entity, entityCode, entityNumber } from "../../helpers/regex";
 
 export function unescapeHTML(str: string): string | null {
   const replaceFn = (val: string, entity: any) => {
-    let match;
+    let match: string;
 
     if (val in htmlEntities) {
       return htmlEntities[val];
     }
 
-    if (match = entity.match(entityCode)) {
-      return String.fromCodePoint(parseInt(match[1], 10));
+    if (match = entity.match(entityNumber)) {
+      return String.fromCodePoint(parseInt(match[1], 16));
     }
 
-    if (match = entity.match(entityNumber)) {
+    if (match = entity.match(entityCode)) {
       return String.fromCodePoint(~~match[1]);
     }
 
