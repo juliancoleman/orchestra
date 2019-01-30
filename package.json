@@ -1,6 +1,6 @@
 {
   "name": "@juliancoleman/orchestra",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A dependency-free, Typescipt-first, pure-function String manipulation library",
   "main": "index.ts",
   "repository": "git@github.com:juliancoleman/orchestra",
@@ -9,10 +9,11 @@
   "pre-commit": [
     "verify",
     "lint",
-    "test:base"
+    "test:base",
+    "build"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.prod.json",
     "coverage": "yarn run test:base --coverage",
     "coverage:serve": "yarn run coverage && yarn run serve:lcov",
     "lint": "tslint -p tsconfig.json",
