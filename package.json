@@ -2,7 +2,7 @@
   "name": "@juliancoleman/orchestra",
   "version": "0.0.3",
   "description": "A dependency-free, Typescipt-first, pure-function String manipulation library",
-  "main": "index.ts",
+  "main": "build/index.js",
   "repository": "git@github.com:juliancoleman/orchestra",
   "author": "Julian Coleman <jcoleman.engineering@gmail.com>",
   "license": "MIT",
