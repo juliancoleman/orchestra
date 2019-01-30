@@ -10,7 +10,8 @@
   },
   "include": [
     "src/**/*.ts",
-    "./typings"
+    "./typings",
+    "./index.ts"
   ],
   "exclude": ["src/**/*.spec.ts"]
 }
