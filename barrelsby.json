@@ -1,6 +1,6 @@
 {
   "delete": true,
-  "directory": "./lib",
+  "directory": "./src/lib",
   "include": ["lib/.+.ts$"],
   "exclude": [".spec.ts$"],
   "location": "all"
