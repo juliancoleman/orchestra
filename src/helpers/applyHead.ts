@@ -5,7 +5,7 @@
  * @param {*} str
  * @returns {string}
  *
- * @description _Returns a string with a function applied._
+ * @description _Returns a string with a function applied to the first index._
  * @since v0.0.1
  */
 
