@@ -7,9 +7,7 @@ import { capitalize } from "../capitalize";
  * @param {string} str
  * @returns {string}
  *
- * @description _Returns a new string with the first letter
- * of each word capitalized. Compatible with
- * diacritics._
+ * @description _Returns a new Title Cased string._
  * @since v0.0.1
  */
 
