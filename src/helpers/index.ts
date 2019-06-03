@@ -1,4 +1,3 @@
-export * from "./applyHead";
 export * from "./escapeCharacters";
 export * from "./htmlEntities";
 export * from "./mapReplace";

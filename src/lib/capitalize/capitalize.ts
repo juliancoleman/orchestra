@@ -5,7 +5,9 @@
  * @param {string} str
  * @returns {string}
  *
- * @description _Returns a new string with the first index of a string transformed to Uppercase._
+ * @description _Returns a new string with the first index
+ * of a string transformed to Uppercase. Compatible with
+ * diacritics._
  * @since v0.0.1
  */
 
