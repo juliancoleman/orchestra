@@ -18,6 +18,7 @@ export const escapeCharacters: any = {
   "®": "&reg;",
   "<": "&lt;",
   ">": "&gt;",
+  // tslint:disable-next-line: quotemark
   '"': "&quot;",
   "&": "&amp;",
   "'": "&#x27;",
