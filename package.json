@@ -9,8 +9,7 @@
   "pre-commit": [
     "verify",
     "lint",
-    "test:base",
-    "build"
+    "test:base"
   ],
   "scripts": {
     "build": "tsc -p tsconfig.prod.json",

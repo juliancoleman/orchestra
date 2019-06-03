@@ -1,5 +1,3 @@
-import { applyHead } from "../../helpers/applyHead";
-
 /**
  * Capitalize
  *
@@ -12,5 +10,19 @@ import { applyHead } from "../../helpers/applyHead";
  */
 
 export function capitalize(str: string): string {
-  return applyHead(str, String.prototype.toUpperCase);
+  const head : number = str.charCodeAt(0);
+  const asciiA = 65;
+  const decimal = 223;
+  const isAlreadyCapitalized = String.fromCharCode(head) === String.fromCharCode(head & decimal);
+  const isOutOfBounds = (head & decimal) < asciiA;
+
+  if (!str) {
+    return "";
+  }
+
+  if (isAlreadyCapitalized || isOutOfBounds) {
+    return str;
+  }
+
+  return String.fromCharCode(head & decimal) + str.slice(1);
 }
