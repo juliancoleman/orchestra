@@ -22,11 +22,11 @@ export function unescapeHTML(str: string): string | null {
       return htmlEntities[val];
     }
 
-    if (match = entity.match(entityNumber)) {
+    if ((match = entity.match(entityNumber))) {
       return String.fromCodePoint(parseInt(match[1], 16));
     }
 
-    if (match = entity.match(entityCode)) {
+    if ((match = entity.match(entityCode))) {
       return String.fromCodePoint(~~match[1]);
     }
 

@@ -19,7 +19,7 @@ export const htmlEntities: any = {
   "&reg;": "®",
   "&lt;": "<",
   "&gt;": ">",
-  "&quot;": "\"",
+  "&quot;": '"',
   "&amp;": "&",
   "&#x27;": "'",
   "&#x2F;": "/",

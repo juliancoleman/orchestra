@@ -18,7 +18,7 @@ export const escapeCharacters: any = {
   "®": "&reg;",
   "<": "&lt;",
   ">": "&gt;",
-  "\"": "&quot;",
+  '"': "&quot;",
   "&": "&amp;",
   "'": "&#x27;",
   "/": "&#x2F;",

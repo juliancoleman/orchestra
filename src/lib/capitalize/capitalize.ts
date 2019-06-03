@@ -12,11 +12,13 @@
  */
 
 export function capitalize(str: string): string {
-  const head : number = str.charCodeAt(0);
+  const head: number = str.charCodeAt(0);
   const asciiA = 65;
   const decimal = 223;
-  const isAlreadyCapitalized = String.fromCharCode(head) === String.fromCharCode(head & decimal);
-  const isOutOfBounds = (head & decimal) < asciiA;
+  const shifted = head & decimal;
+  const isAlreadyCapitalized =
+    String.fromCharCode(head) === String.fromCharCode(shifted);
+  const isOutOfBounds = shifted < asciiA;
 
   if (!str) {
     return "";
@@ -26,5 +28,5 @@ export function capitalize(str: string): string {
     return str;
   }
 
-  return String.fromCharCode(head & decimal) + str.slice(1);
+  return String.fromCharCode(shifted) + str.slice(1);
 }

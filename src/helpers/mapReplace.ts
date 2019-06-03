@@ -13,10 +13,16 @@ import { coerceString } from "../lib";
  * @since v0.0.1
  */
 
-export function mapReplace(str: string, matcher: RegExp, fn: (substring: string, ...args: any[]) => string): string | null {
+export function mapReplace(
+  str: string,
+  matcher: RegExp,
+  fn: (substring: string, ...args: any[]) => string,
+): string | null {
   const node = coerceString(str);
 
-  if (!node) { return null; }
+  if (!node) {
+    return null;
+  }
 
   return node.replace(matcher, fn);
 }
