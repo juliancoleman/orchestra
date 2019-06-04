@@ -3,7 +3,7 @@ import { capitalize } from "../capitalize";
 import { camscal } from "../../helpers";
 
 /**
- * Camelize
+ * Pascalize
  *
  * @export
  * @param {string} str
