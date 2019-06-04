@@ -8,6 +8,7 @@ import { capitalize, clean } from "../";
  * @returns {string}
  *
  * @description _Normalizes a string to be human readable (not 100% accurate)._
+ * @since v0.0.1
  */
 
 export function normalize(str: string): string {

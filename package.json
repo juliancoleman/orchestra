@@ -1,16 +1,12 @@
 {
   "name": "@juliancoleman/orchestra",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "A dependency-free, Typescipt-first, pure-function String manipulation library",
   "main": "build/index.js",
   "repository": "git@github.com:juliancoleman/orchestra",
   "author": "Julian Coleman <jcoleman.engineering@gmail.com>",
   "license": "MIT",
-  "pre-commit": [
-    "verify",
-    "lint",
-    "test:base"
-  ],
+  "pre-commit": ["verify", "lint", "test:base"],
   "scripts": {
     "build": "tsc -p tsconfig.prod.json",
     "coverage": "yarn run test:base --coverage",
