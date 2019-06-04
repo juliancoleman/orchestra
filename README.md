@@ -22,39 +22,6 @@ yarn add @juliancoleman/orchestra
 npm i @juliancoleman/orchestra
 ```
 
-### `@juliancoleman`?
-
-I scope all my packages for the purpose of combining
-multiple packages into a single subdirectory, resulting in
-something like this...
-
-```
-lib/
-node_modules/
-  - @juliancoleman/
-    - another-thing/
-    - orchestra/
-    - something/
-src/
-```
-
-Instead of this...
-
-```
-lib/
-node_modules/
-  - another-thing/
-  - orchestra/
-  - something/
-src/
-```
-
-This really helps clean up the `node_modules` directory. My
-packages aren't stuck intwined with `acorn`, `ramda`,
-`react`, `uuid`, and the likes of the thousands of other
-packages that were automatically downloaded when running
-`yarn`.
-
 # Contribute
 
 ## Installation
@@ -70,14 +37,6 @@ yarn
 npm i
 ```
 
-> Q: _I thought this was dependency-free???_
->
-> A: This is to install dev-dependencies, which you will
-> need if you decide you'd like to contribute.
-
-There is no server framework for Orchestra, so you won't
-need to `yarn start` or any of that.
-
 ## Testing
 
 #### Note:
@@ -85,8 +44,9 @@ need to `yarn start` or any of that.
 If you run into the following error while running the test
 suite on MacOS:
 
-```bash
+```sh
 $ jest --config ./jest.config.js -i --watch
+
 Error: `fsevents` unavailable (this watcher can only be used on Darwin)
 ```
 
@@ -99,11 +59,7 @@ brew install watchman
 ### Test suite
 
 The backbone of Orchestra's test suite is [Jest](https://facebook.github.io/jest/).
-I chose `Jest` over `mocha` / `chai` for the reason that I have
-had the beautiful opportunity to use this as the testing
-framework for quite a few projects during my time at
-[VideoAmp](https://github.com/videoamp), and have built a
-solid understanding of the framework. The set up is stupid
+I chose `Jest` over `mocha` / `chai`. The set up is stupid
 simple and includes its own [matchers](https://facebook.github.io/jest/docs/en/expect.html)
 library, allowing me to use only one dev-dependency
 instead of two, resulting in smaller overhead.
@@ -164,16 +120,6 @@ not watch for file changes.**
 
 A special command is used for Continuous Integration that
 you won't need to worry about. Just know that it is there.
-
-If you decide you'd like to run a service like [Travis](https://travis-ci.org/)
-with the help of [Replicated](https://github.com/replicatedhq/replicated)
-for on-premises continuous integration, [follow this demo](https://github.com/replicatedhq/replicated-ci-demo)
-to get started. The demo includes configs for both `Travis`
-and `Circle CI`.
-
-For `Orchestra`, I feel this practice would be general
-overkill. But this library is architected to help support
-that for developer practice.
 
 ### Writing your own tests
 
@@ -236,7 +182,3 @@ Orchestra as a dependency:
 ```ts
 import { myFunction } from "orchestra";
 ```
-
-Pathing issues? What are those? Barrels seek to solve this
-problem, which is why I've adopted this pattern even in my
-smaller projects.
