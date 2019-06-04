@@ -14,6 +14,6 @@ import { capitalize } from "../capitalize";
 export function titleize(str: string): string {
   return str
     .split(" ")
-    .map(capitalize)
+    .map(word => capitalize(word)) // don't shorthand this. Capitalize has another argument.
     .join(" ");
 }
