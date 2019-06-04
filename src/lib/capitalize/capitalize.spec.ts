@@ -10,9 +10,11 @@ describe("#capitalize()", () => {
   it("returns a string with the first character capitalized", () => {
     const result1 = capitalize("test");
     const result2 = capitalize("Test");
+    const result3 = capitalize("HELLO", true);
 
     expect(result1).toBe("Test");
     expect(result2).toBe("Test");
+    expect(result3).toBe("Hello");
   });
 
   describe("the first character is not a letter", () => {

@@ -1,11 +1,18 @@
+import { decapitalize } from "../decapitalize";
+
+import { camscal } from "../../helpers";
+
 /**
  * Camelize
  *
- * returns a new camelCased string. Able to convert from
- * `camelCase`, `PascalCase`, `kebab-case`, `snake_case`,
- * `lowercase`, `uppercase`, and `Title Case`.
+ * @export
+ * @param {string} str
+ * @returns {string}
+ *
+ * @description _Converts a string to camelCase._
+ * @since v0.0.1
  */
 
-export const camelize: (str: string) => string = (str) => {
-  return str;
-};
+export function camelize(str: string): string {
+  return decapitalize(camscal(str));
+}
