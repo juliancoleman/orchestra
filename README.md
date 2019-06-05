@@ -8,12 +8,9 @@ A dependency-free, Typescipt-first, pure-function `String` manipulation library
 [![Test Coverage](https://api.codeclimate.com/v1/badges/392fba3ab70c70e4ebb9/test_coverage)](https://codeclimate.com/github/juliancoleman/orchestra/test_coverage)
 [![codecov](https://codecov.io/gh/juliancoleman/orchestra/branch/master/graph/badge.svg)](https://codecov.io/gh/juliancoleman/orchestra)
 
-# Usage
+## Usage
 
-## Installation
-
-Thank you for checking out Orchestra! To add Orchestra to
-your project, simply run the following:
+### Installation
 
 ```bash
 # yarn
@@ -23,12 +20,12 @@ yarn add @juliancoleman/orchestra
 npm i @juliancoleman/orchestra
 ```
 
-# Contribute
+## Contribute
 
-## Installation
+### Fork & Clone
 
-Feel free to clone or fork this repo to start out. Once
-you're there, go ahead and run the following command(s):
+Feel free to fork and clone this repo to start out. Once
+cloned, go ahead and run one of the following commands:
 
 ```bash
 # yarn
@@ -38,7 +35,7 @@ yarn
 npm i
 ```
 
-## Testing
+### Testing
 
 #### Note:
 
@@ -59,12 +56,6 @@ brew install watchman
 
 ### Test suite
 
-The backbone of Orchestra's test suite is [Jest](https://facebook.github.io/jest/).
-I chose `Jest` over `mocha` / `chai`. The set up is stupid
-simple and includes its own [matchers](https://facebook.github.io/jest/docs/en/expect.html)
-library, allowing me to use only one dev-dependency
-instead of two, resulting in smaller overhead.
-
 You can run all tests in `Orchestra` by simply running:
 
 ```bash
@@ -84,7 +75,7 @@ if it detects a change in any `.js` or `.ts` file.
 
 ### Coverage reporting
 
-#### Local
+#### Local (Terminal)
 
 To view a map of the coverage report, run the following:
 
@@ -96,12 +87,11 @@ yarn coverage
 npm run coverage
 ```
 
-This command will spin up jest, run all tests, run a
-coverage report, and print the report to the console.
+This spins up jest, runs all tests, runs a
+coverage report, and prints the report to the console.
 **This command does not watch for file changes.**
 
-If you want to view a map of the coverage report (outside
-of Terminal), run the following command:
+#### Local (Browser)
 
 ```bash
 # yarn
@@ -111,16 +101,10 @@ yarn coverage:serve
 npm run coverage:serve
 ```
 
-This command will spin up Jest, run all tests, run a
-coverage report, and spin up a server to view the coverage
-report in the browser. Instructions for the URL will be
-printed out when the server is ready. **This command does
-not watch for file changes.**
-
-#### Continuous Integration
-
-A special command is used for Continuous Integration that
-you won't need to worry about. Just know that it is there.
+This spins up Jest, runs all tests, runs a
+coverage report, and spins up a web server, generating a
+URL when the server is ready. **This command does not watch
+for file changes.**
 
 ### Writing your own tests
 
@@ -136,21 +120,20 @@ describe("#myFunction", () => {
 });
 ```
 
-That wasn't so difficult, was it? Let's cover some more...
-
 #### Creating a new Orchestra method
 
 So, you have a great idea on a new function you would like
 Orchestra to adopt. I appreciate the contribution!
 
-1. Hop into the `lib/` directory and create a new folder
+1. Hop into `lib/` and create a new folder
+
 > The folder structure should look like the following
 >
 >     myFunction/
 >       - myFunction.ts
 >       - myFunction.spec.ts
 >
-> (don't worry about the `index.ts` files)
+> (don't create any `index.ts` files)
 >
 2. Begin creating your function.
    - Don't forget to utilize TypeScript and its type system.
