@@ -3,9 +3,13 @@
 A dependency-free, Typescipt-first, pure-function `String` manipulation library
 
 [![NPM](https://img.shields.io/npm/v/@juliancoleman/orchestra.svg)](https://npmjs.com/package/@juliancoleman/orchestra)
+
 [![Build Status](https://semaphoreci.com/api/v1/juliancoleman/orchestra/branches/master/badge.svg)](https://semaphoreci.com/juliancoleman/orchestra)
+[![Build Status](https://travis-ci.com/juliancoleman/orchestra.svg?branch=master)](https://travis-ci.com/juliancoleman/orchestra)
+
 [![Maintainability](https://api.codeclimate.com/v1/badges/392fba3ab70c70e4ebb9/maintainability)](https://codeclimate.com/github/juliancoleman/orchestra/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/392fba3ab70c70e4ebb9/test_coverage)](https://codeclimate.com/github/juliancoleman/orchestra/test_coverage)
+
 [![codecov](https://codecov.io/gh/juliancoleman/orchestra/branch/master/graph/badge.svg)](https://codecov.io/gh/juliancoleman/orchestra)
 
 ## Usage
