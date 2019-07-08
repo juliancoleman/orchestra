@@ -13,15 +13,17 @@
   ],
   "scripts": {
     "build": "tsc -p tsconfig.prod.json",
+    "codecov": "cat ./coverage/lcov.info | codecov",
     "coverage": "npm run test:base --coverage",
     "coverage:serve": "npm run coverage && npm run serve:lcov",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
     "lint": "tslint -p tsconfig.json",
     "generate-barrels": "barrelsby -c barrelsby.json",
     "postinstall": "npm run build",
     "serve:lcov": "serve -s coverage/lcov-report",
     "test": "npm run test:base --watch",
     "test:base": "jest --config ./jest.config.js -i --passWithNoTests",
-    "test:ci": "CI=true npm run coverage && cat ./coverage/lcov.info | codecov",
+    "test:ci": "CI=true npm run coverage && npm run codecov && npm run coveralls",
     "verify": "tsc"
   },
   "devDependencies": {
@@ -29,6 +31,7 @@
     "@types/node": "^12.0.12",
     "barrelsby": "^2.1.1",
     "codecov": "^3.5.0",
+    "coveralls": "^3.0.4",
     "jest": "^24.8.0",
     "jest-spec-reporter": "^1.0.6",
     "pre-commit": "^1.2.2",
