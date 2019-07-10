@@ -1,7 +1,11 @@
 {
   "delete": true,
   "directory": "./src",
-  "include": ["src/.+.ts$"],
-  "exclude": [".spec.ts$"],
+  "include": [
+    "src/.+.ts$"
+  ],
+  "exclude": [
+    ".spec.ts$"
+  ],
   "location": "all"
 }
