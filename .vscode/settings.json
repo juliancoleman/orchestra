@@ -1,4 +1,22 @@
 {
   "typescript.tsdk": "node_modules/typescript/lib",
   "editor.formatOnSave": true,
+  "peacock.affectActivityBar": true,
+  "peacock.affectStatusBar": true,
+  "peacock.affectTitleBar": false,
+  "workbench.colorCustomizations": {
+    "[Apex]": {
+      "editorIndentGuide.background": "#0df0",
+      "editorIndentGuide.activeBackground": "#00baff",
+      "tab.activeBorderTop": "#00baff"
+    },
+    "activityBar.background": "#f04800",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#760000",
+    "activityBarBadge.foreground": "#e7e7e799",
+    "statusBar.background": "#bd3900",
+    "statusBarItem.hoverBackground": "#f04800",
+    "statusBar.foreground": "#e7e7e7"
+  },
 }
