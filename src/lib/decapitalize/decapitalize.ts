@@ -12,19 +12,19 @@
  */
 
 export function decapitalize(str: string): string {
-  const head: number = str.charCodeAt(0);
-  const asciiz = 122;
-  const decimal = 32;
-  const shifted = head | decimal;
-  const isAlreadyCapitalized =
-    String.fromCharCode(head) === String.fromCharCode(shifted);
-  const isOutOfBounds = shifted > asciiz;
-
   if (!str) {
     return "";
   }
 
-  if (isAlreadyCapitalized || isOutOfBounds) {
+  const head: number = str.charCodeAt(0);
+  const ascii_z = 122; // tslint:disable-line: variable-name
+  const decimal = 32;
+  const shifted = head | decimal;
+  const isAlreadyDecapitalized =
+    String.fromCharCode(head) === String.fromCharCode(shifted);
+  const isOutOfBounds = shifted > ascii_z;
+
+  if (isAlreadyDecapitalized || isOutOfBounds) {
     return str;
   }
 

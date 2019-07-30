@@ -17,12 +17,12 @@ export function capitalize(str: string, restLower?: boolean): string {
   }
 
   const head: number = str.charCodeAt(0);
-  const asciiA = 65;
+  const ascii_A = 65; // tslint:disable-line: variable-name
   const decimal = 223;
   const shifted = head & decimal;
   const isAlreadyCapitalized =
     String.fromCharCode(head) === String.fromCharCode(shifted);
-  const isOutOfBounds = shifted < asciiA;
+  const isOutOfBounds = shifted < ascii_A;
 
   if ((isAlreadyCapitalized && !restLower) || isOutOfBounds) {
     return str;
