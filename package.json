@@ -1,6 +1,6 @@
 {
   "name": "@juliancoleman/orchestra",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A dependency-free, Typescipt-first, pure-function String manipulation library",
   "main": "build/index.js",
   "repository": "git@github.com:juliancoleman/orchestra",
